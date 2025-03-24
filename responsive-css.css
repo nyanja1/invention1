@@ -1,0 +1,109 @@
+/* 
+ * Responsive CSS for Inbound Holdings East Africa Ltd
+ * 
+ */
+
+/* Tablets and smaller desktop screens */
+@media screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-content {
+    order: 2;
+  }
+  
+  .about-image {
+    order: 1;
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  .header-content {
+    position: relative;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .main-nav .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: var(--transition);
+    z-index: 1000;
+  }
+  
+  .main-nav .nav-list.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  .main-nav .nav-list li {
+    margin: 15px 0;
+  }
+  
+  .hero {
+    padding: 60px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .logo img {
+    max-height: 40px;
+  }
+  
+  .header-content {
+    padding: 10px 0;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+  }
+}
