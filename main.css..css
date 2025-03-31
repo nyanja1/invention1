@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
   color: var(--dark-color);
   background-color: #fff;
@@ -36,7 +36,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 10%;
   height: auto;
 }
 
@@ -59,7 +59,7 @@ ul {
 }
 
 .section-title:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -147,7 +147,7 @@ header {
 }
 
 .main-nav .nav-list a:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -180,7 +180,8 @@ header {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -355,7 +356,7 @@ footer {
 
 .footer-links h3:after,
 .footer-contact h3:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
