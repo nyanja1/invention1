@@ -207,7 +207,7 @@
             Contact us today for customized solutions tailored to your business
             needs
           </p>
-          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          <button class="btn btn-primary" onclick="showQuoteModal()">Request a Quote</button>
         </div>
       </div>
     </section>
@@ -271,6 +271,29 @@
       </div>
     </footer>
 
-    <script src="/main-js.js"></script>
+
+<!-- Quote Request Modal -->
+<div id="quoteModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="hideQuoteModal()">&times;</span>
+    <h2>Request a Quote</h2>
+    <form id="quoteForm" onsubmit="submitQuote(event)">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Request</button>
+    </form>
+  </div>
+</div>
+    <script src="main-js.js"></script>
   </body>
 </html>

@@ -61,3 +61,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+//show the modal
+
+// Show the modal
+function showQuoteModal() {
+  document.getElementById("quoteModal").style.display = "flex";
+}
+
+// Hide the modal
+function hideQuoteModal() {
+  document.getElementById("quoteModal").style.display = "none";
+}
+
+// Handle form submission
+function submitQuote(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // For now, we'll just simulate sending an email by logging to console
+  console.log("Quote Request Submitted:", { name, email, message });
+
+  // You could integrate with an email service here (e.g., EmailJS or a backend API)
+  alert("Thank you for your request! We'll get back to you soon.");
+
+  // Clear the form and hide the modal
+  document.getElementById("quoteForm").reset();
+  hideQuoteModal();
+}
+
+// Close modal when clicking outside of it
+window.onclick = function (event) {
+  const modal = document.getElementById("quoteModal");
+  if (event.target === modal) {
+    hideQuoteModal();
+  }
+};
