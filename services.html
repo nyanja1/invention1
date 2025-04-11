@@ -275,9 +275,9 @@
 <!-- Quote Request Modal -->
 <div id="quoteModal" class="modal">
   <div class="modal-content">
-    <span class="close-btn" onclick="hideQuoteModal()">&times;</span>
+    <span class="close-btn" onclick="hideQuoteModal()">×</span>
     <h2>Request a Quote</h2>
-    <form id="quoteForm" onsubmit="submitQuote(event)">
+    <form id="quoteForm" onsubmit="submitQuote(event)" method="POST">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
@@ -293,7 +293,7 @@
       <button type="submit" class="btn btn-primary">Send Request</button>
     </form>
   </div>
-
+</div>
 </div>
     <script src="main-js.js"></script>
   </body>
